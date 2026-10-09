@@ -1,0 +1,6 @@
+{
+  "classes": [
+    { "id":"DZ_RESEARCH_01", "name":"Abyssal Research Submersible", "maxDepthMeters":9000, "batteryMWh":80, "reactorMW":20, "crewCapacity":8, "cargoM3":120 },
+    { "id":"DZ_RESCUE_01", "name":"Deep Rescue Variant", "maxDepthMeters":6500, "batteryMWh":110, "reactorMW":16, "crewCapacity":10, "cargoM3":160 }
+  ]
+}

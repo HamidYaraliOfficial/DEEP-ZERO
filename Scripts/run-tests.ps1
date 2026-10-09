@@ -1,0 +1,2 @@
+param([string]$UnrealEditor="C:\Program Files\Epic Games\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe",[string]$ProjectPath="$PSScriptRoot\..\DEEP_ZERO.uproject")
+$ErrorActionPreference="Stop";if(!(Test-Path $UnrealEditor)){throw "UnrealEditor not found"};& $UnrealEditor (Resolve-Path $ProjectPath) -unattended -nop4 -nosplash -nullrhi -ExecCmds="Automation RunTests DeepZero;Quit" -TestExit="Automation Test Queue Empty" -ReportOutputPath="$PSScriptRoot\..\Saved\TestReports";if($LASTEXITCODE-ne0){throw "Automation tests failed"}

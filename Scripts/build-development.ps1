@@ -1,0 +1,2 @@
+param([string]$UnrealEngineRoot="C:\Program Files\Epic Games\UE_5.8",[string]$ProjectPath="$PSScriptRoot\..\DEEP_ZERO.uproject")
+$ErrorActionPreference="Stop";$build=Join-Path $UnrealEngineRoot "Engine\Build\BatchFiles\Build.bat";if(!(Test-Path $build)){throw "Build.bat not found"};& $build DeepZeroEditor Win64 Development (Resolve-Path $ProjectPath) -Progress;if($LASTEXITCODE-ne0){throw "Development build failed"}

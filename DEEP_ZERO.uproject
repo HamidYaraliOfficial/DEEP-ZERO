@@ -1,0 +1,12 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Games",
+  "Description": "DEEP ZERO - First-Person Submarine Survival Horror Simulation",
+  "Modules": [ { "Name": "DeepZero", "Type": "Runtime", "LoadingPhase": "Default" } ],
+  "Plugins": [
+    { "Name": "EnhancedInput", "Enabled": true },
+    { "Name": "Niagara", "Enabled": true }
+  ],
+  "TargetPlatforms": [ "WindowsNoEditor" ]
+}
